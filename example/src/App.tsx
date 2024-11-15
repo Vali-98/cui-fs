@@ -1,12 +1,9 @@
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'cui-fs';
-
-const result = multiply(3, 7);
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result: {3}</Text>
     </View>
   );
 }

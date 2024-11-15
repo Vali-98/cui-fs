@@ -1,6 +1,10 @@
 # cui-fs
 
-Custom filesystem functions for ChatterUI
+Custom filesystem functions for ChatterUI based on [react-native-fs](https://github.com/birdofpreyru/react-native-fs/tree/master)
+
+This library is a subset of react-native-fs but with all unused functions and dependencies removed for maintainability purposes.
+
+Currently Android only.
 
 ## Installation
 
@@ -10,19 +14,10 @@ npm install cui-fs
 
 ## Usage
 
+This package has two specific functions which are lacking from expo-filesystem, thus prompting this module creation:
 
-```js
-import { multiply } from 'cui-fs';
-
-// ...
-
-const result = multiply(3, 7);
-```
-
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+- copyFileRes - copies a file from app resources
+- writeFile - this function is specifically used for copying app files to default Android downloads directory
 
 ## License
 
